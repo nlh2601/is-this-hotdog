@@ -1,11 +1,24 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { HotdogClassifier } from '@/components/HotdogClassifier';
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <div className="min-h-screen bg-gradient-warm">
+      <div className="container mx-auto px-4 py-12">
+        <div className="text-center mb-12">
+          <h1 className="text-6xl font-bold text-hotdog-sausage mb-4">
+            🌭 Not Hotdog
+          </h1>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            The most advanced hotdog detection technology in the world. 
+            Upload an image and discover if it's a hotdog or not!
+          </p>
+        </div>
+        
+        <HotdogClassifier />
+        
+        <div className="text-center mt-12 text-sm text-muted-foreground">
+          <p>Powered by AI • Inspired by Silicon Valley</p>
+        </div>
       </div>
     </div>
   );

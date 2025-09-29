@@ -47,6 +47,12 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        hotdog: {
+          bun: "hsl(var(--hotdog-bun))",
+          sausage: "hsl(var(--hotdog-sausage))",
+          mustard: "hsl(var(--hotdog-mustard))",
+          ketchup: "hsl(var(--hotdog-ketchup))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -57,6 +63,15 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+      },
+      backgroundImage: {
+        'gradient-hotdog': 'var(--gradient-hotdog)',
+        'gradient-bun': 'var(--gradient-bun)',
+        'gradient-warm': 'var(--gradient-warm)',
+      },
+      boxShadow: {
+        'hotdog': 'var(--shadow-hotdog)',
+        'warm': 'var(--shadow-warm)',
       },
       borderRadius: {
         lg: "var(--radius)",
