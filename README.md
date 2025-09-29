@@ -1,7 +1,7 @@
 # 🌭 Not Hotdog
 
 An AI-powered image classifier that determines whether an image contains a hotdog or not, inspired by the iconic Silicon Valley TV show scene.
-
+https://is-this-hotdog.lovable.app/
 ## Features
 
 - **AI Image Classification**: Uses Hugging Face Transformers.js for in-browser image recognition
