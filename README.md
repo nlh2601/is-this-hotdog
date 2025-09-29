@@ -1,73 +1,92 @@
-# Welcome to your Lovable project
+# 🌭 Not Hotdog
 
-## Project info
+An AI-powered image classifier that determines whether an image contains a hotdog or not, inspired by the iconic Silicon Valley TV show scene.
 
-**URL**: https://lovable.dev/projects/910bb7df-b6f4-4f76-a4f8-fb38c9d157aa
+## Features
 
-## How can I edit this code?
+- **AI Image Classification**: Uses Hugging Face Transformers.js for in-browser image recognition
+- **Drag & Drop Upload**: Easy file upload with visual feedback
+- **Real-time Analysis**: Instant classification results with confidence scores
+- **Responsive Design**: Beautiful hotdog-themed UI that works on all devices
+- **No Backend Required**: All processing happens in your browser using WebGPU
 
-There are several ways of editing your application.
+## How It Works
 
-**Use Lovable**
+1. **Upload an Image**: Drag and drop or click to select an image file (PNG, JPG, WebP)
+2. **AI Analysis**: The app uses Google's Vision Transformer model to analyze the image
+3. **Get Results**: Receive a clear "HOTDOG!" or "NOT HOTDOG" verdict with confidence score
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/910bb7df-b6f4-4f76-a4f8-fb38c9d157aa) and start prompting.
+## Technology Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+- **React 18** - Modern React with hooks
+- **TypeScript** - Type-safe development
+- **Tailwind CSS** - Utility-first styling with custom hotdog theme
+- **Vite** - Lightning-fast build tool
+- **Hugging Face Transformers.js** - In-browser AI model execution
+- **Shadcn/ui** - Beautiful, accessible UI components
 
-**Use your preferred IDE**
+## Getting Started
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Prerequisites
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Node.js & npm installed ([install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating))
 
-Follow these steps:
+### Installation
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
+```bash
+# Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
+# Navigate to project directory
 cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## Usage
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+1. Open the app in your browser
+2. Upload an image by dragging and dropping or clicking the upload area
+3. Wait for the AI to analyze the image (first load may take a moment to download the model)
+4. See the classification result with confidence score
+5. Click "Try Another Image" to test more images
 
-**Use GitHub Codespaces**
+## AI Model
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+The app uses Google's Vision Transformer (ViT) model for image classification. The model runs entirely in your browser using WebGPU for optimal performance, with automatic fallback to CPU if WebGPU is unavailable.
 
-## What technologies are used for this project?
+## Deployment
 
-This project is built with:
+The app can be deployed to any static hosting service:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- **Lovable**: Click Share → Publish in the Lovable editor
+- **Vercel**: Connect your GitHub repo for automatic deployments
+- **Netlify**: Deploy directly from GitHub
+- **GitHub Pages**: Use the built files from `npm run build`
 
-## How can I deploy this project?
+## Contributing
 
-Simply open [Lovable](https://lovable.dev/projects/910bb7df-b6f4-4f76-a4f8-fb38c9d157aa) and click on Share -> Publish.
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Make your changes
+4. Commit your changes (`git commit -m 'Add amazing feature'`)
+5. Push to the branch (`git push origin feature/amazing-feature`)
+6. Open a Pull Request
 
-## Can I connect a custom domain to my Lovable project?
+## License
 
-Yes, you can!
+This project is open source and available under the [MIT License](LICENSE).
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Acknowledgments
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+- Inspired by the "Not Hotdog" app from HBO's Silicon Valley
+- Built with [Lovable](https://lovable.dev) - AI-powered web development
+- AI models provided by [Hugging Face](https://huggingface.co)
+
+---
+
+**Built with ❤️ and AI** • [Edit in Lovable](https://lovable.dev)
